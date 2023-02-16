@@ -35,11 +35,12 @@ def convert_to_linked_list(lst):
         linked_list.add_node(item)
     return linked_list
 
-lst = [3, 1, 4, 5, 9, 2, 6]
+lst = [3, 10, 1, 4, 5, 9, 2, 6]
 
 linked_list = convert_to_linked_list(lst)
 
 current_node = linked_list.head
 while current_node is not None:
-    print(current_node.value)
+    print(current_node.value, end='\n|\n')
     current_node = current_node.next
+    
